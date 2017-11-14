@@ -1,0 +1,23 @@
+{
+    "name": "robinthehood/naming-convention",
+    "type": "library",
+    "description": "Converts and checks naming-conventions.",
+    "keywords": ["camelcase", "snakecase", "naming-conventions"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Wieschendorf",
+            "email": "mail@robinwieschendorf.de",
+            "homepage": "http://robinwieschendorf.de",
+            "role": "Project Founder"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "NamingConvention\\" : "src"
+        }
+    }
+}
