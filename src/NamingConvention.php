@@ -54,6 +54,7 @@ class NamingConvention
         $parts = self::splitAtUpperCase($str);
         $lastIndex = count($parts) - 1;
         $index = 0;
+        $snakeCase = '';
         foreach ($parts as $part) {
             $snakeCase .= strtolower($part);
             if ($lastIndex != $index++) {
