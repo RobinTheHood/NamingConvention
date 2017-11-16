@@ -43,6 +43,7 @@ class NamingConvention
     public static function snakeCaseToCamelCaseFirstUpper($str)
     {
         $parts = explode('_', $str);
+        $camelCase = '';
         foreach ($parts as $part) {
             $camelCase .= ucfirst($part);
         }
