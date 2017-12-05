@@ -5,14 +5,16 @@ class NamingConvention
 {
     public static function isCamelCase($str)
     {
-        return ctype_alpha($str);
+        $firstChar = substr($str, 0 ,1);
+        return ctype_alpha($firstChar);
     }
 
     public static function isUpperCamelCase($str)
     {
-        if (!ctype_upper(substr($str, 0 ,1))) {
+        $firstChar = substr($str, 0 ,1);
+        if (!ctype_upper($firstChar)) {
             return false;
-        } elseif (!ctype_alpha($str)) {
+        } elseif (!ctype_alpha($firstChar)) {
             return false;
         }
         return true;
@@ -20,9 +22,10 @@ class NamingConvention
 
     public static function isLowerCamelCase($str)
     {
-        if (!ctype_lower(substr($str, 0 ,1))) {
+        $firstChar = substr($str, 0 ,1);
+        if (!ctype_lower($firstChar)) {
             return false;
-        } elseif (!ctype_alpha($str)) {
+        } elseif (!ctype_alpha($firstChar)) {
             return false;
         }
         return true;
