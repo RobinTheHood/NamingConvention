@@ -55,7 +55,7 @@ class NamingConvention
 
     public static function camelCaseToSnakeCase($str)
     {
-        $parts = self::splitAtUpperCase($str);
+        $parts = preg_split('/(?=[A-Z0-9])/', $str, -1, PREG_SPLIT_NO_EMPTY);
         $lastIndex = count($parts) - 1;
         $index = 0;
         $snakeCase = '';
