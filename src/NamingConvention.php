@@ -1,5 +1,5 @@
 <?php
-namespace NamingConvention;
+namespace RobinTheHood\NamingConvention;
 
 class NamingConvention
 {
